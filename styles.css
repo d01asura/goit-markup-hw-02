@@ -1,7 +1,7 @@
 body {
     background-color: var(--cloud);
     color: var(--slate);
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     color: var(--slate);
 } 
 
@@ -60,12 +60,21 @@ body {
     color: var(--iris);
 }
 
-.header-contact a {
+.cont-mail,
+.cont-tel{
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    color: var(--slate)
+}
+
+.cont-mail:hover,
+.cont-mail:focus,
+.cont-tel:focus,
+.cont-tel:hover {
+    color: var(--iris)
 }
 
 /* Main Section Hero */
