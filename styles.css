@@ -1,7 +1,8 @@
 body {
-    background-color: #F4F4FD;
-    color: #434455;
+    background-color: var(--cloud);
+    color: var(--slate);
     font-family: "Roboto";
+    color: var(--slate);
 } 
 
 .list {
@@ -12,10 +13,19 @@ body {
     text-decoration: none;
 }
 
+:root {
+    --iris: #4D5AE5;
+    --navyblue: #2E2F42;
+    --green: #31D0AA;
+    --slate: #434455;
+    --light-slate: #8E8F99;
+    --cornflover: #E7E9FC;
+    --cloud: #F4F4FD;
+}
 /* Site nav */
 .header {
     background-color: #FFFFFF;
-    border-bottom: 1px solid #E7E9FC;
+    border-bottom: 1px solid var(--cornflover);
 }
 
 .header-logo {
@@ -28,11 +38,11 @@ body {
     align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #4D5AE5;
+    color: var(--iris);
 }
 
 .header-logo-part-two {
-    color: #2E2F42;
+    color: var(--navyblue);
 }
 
 .link, 
@@ -43,11 +53,11 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--navyblue);
 }
 
 .header-link .link:active {
-    color: #4D5AE5;
+    color: var(--iris);
 }
 
 .header-contact a {
@@ -56,8 +66,6 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
-
 }
 
 /* Main Section Hero */
@@ -73,13 +81,13 @@ body {
 }
 
 .hero {
-    background: #2E2F42;
+    background: var(--navyblue);
 }
 
 .hero-button,
 .hero-button:hover,
 .hero-button:focus {
-    background: #4D5AE5;
+    background: var(--iris);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     display: flex;
@@ -113,7 +121,7 @@ body {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--navyblue);
 }
 .section-text {
     font-style: normal;
@@ -121,7 +129,6 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
 }
 
 /* Main Section 3 */
@@ -134,19 +141,19 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    color: #2E2F42;
+    color: var(--navyblue);
 }
 
 .list {
     background: linear-gradient(0deg, rgba(77, 90, 229, 0.1), rgba(77, 90, 229, 0.1)), url(2368.jpg);
     background-blend-mode: soft-light, normal;
-    border: 1px solid #E7E9FC;
+    border: 1px solid var(--cornflover);
 }
 
 /* Main Section 4 */
 
 .team {
-    background-color: #F4F4FD;
+    background-color: var(--cloud);
 }
 .team-title {
     font-style: normal;
@@ -156,7 +163,7 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    color: #2E2F42;
+    color: var(--navyblue);
 }
 .team-list-card {
     display: flex;
@@ -176,7 +183,7 @@ body {
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--navyblue);
 }
 .team-pos {
     font-style: normal;
@@ -185,13 +192,12 @@ body {
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.02em;
-    color: #434455;
 }
 
 /* Footer */
 
 .bottom {
-    background: #2E2F42;
+    background: var(--navyblue);
 }
 .bottom-logo {
     font-family: 'Raleway';
@@ -203,10 +209,10 @@ body {
     align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #4D5AE5;
+    color: var(--iris);
 }
 .bottom-sublogo {
-    color: #F4F4FD;
+    color: var(--cloud);
 }
 .bottom-text {
     font-style: normal;
@@ -214,7 +220,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #E7E9FC;
+    color: var(--cornflover);
 }
 
 /* Portfolio main */
@@ -222,8 +228,8 @@ body {
 .menu-botton,
 .menu-botton:hover,
 .menu-botton:focus {
-    background: #F4F4FD;
-    border: 1px solid #E7E9FC;
+    background: var(--cloud);
+    border: 1px solid var(--cornflover);
     border-radius: 4px;
     font-style: normal;
     font-weight: 500;
@@ -233,7 +239,7 @@ body {
     align-items: center;
     text-align: center;
     letter-spacing: 0.04em;
-    color: #4D5AE5;
+    color: var(--iris);
 }
 .menu-botton:active {
     background: #404BBF;
@@ -252,20 +258,17 @@ body {
 .menu-img {
 }
 .menu-title {
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--navyblue);
 }
 .menu-text {
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
 }
