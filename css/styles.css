@@ -1,15 +1,3 @@
-body {
-    background-color: var(--cloud);
-    color: var(--slate);
-    font-family: "Roboto", sans-serif;
-    color: var(--slate);
-} 
-.list {
-    list-style: none;
-}
-.lin {
-    text-decoration: none;
-}
 :root {
     --iris: #4D5AE5;
     --navyblue: #2E2F42;
@@ -19,6 +7,17 @@ body {
     --cornflover: #E7E9FC;
     --cloud: #F4F4FD;
 }
+body {
+    background-color: #FFFFFF;
+    color: var(--slate);
+    font-family: "Roboto", sans-serif;
+} 
+.list {
+    list-style: none;
+}
+.lin {
+    text-decoration: none;
+}
 .subtitle {
     font-weight: 500;
     font-size: 20px;
@@ -26,13 +25,11 @@ body {
     letter-spacing: 0.02em;
 }
 .text {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
 .title {
-    font-weight: 600;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
@@ -85,7 +82,6 @@ body {
 /* Main Section Hero */
 
 .hero-title {
-    font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
@@ -101,18 +97,15 @@ body {
     background: var(--iris);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
     padding: 16px 32px;
     gap: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    display: flex;
     align-items: center;
     letter-spacing: 0.04em;
     color: #FFFFFF;
+    font-family: inherit;
 }
 .hero-button:active {
     background-color: #404BBF;
@@ -130,8 +123,6 @@ body {
 /* Main Section 3 */
 
 .list {
-    background: linear-gradient(0deg, rgba(77, 90, 229, 0.1), rgba(77, 90, 229, 0.1)), url(2368.jpg);
-    background-blend-mode: soft-light, normal;
     border: 1px solid var(--cornflover);
 }
 
@@ -181,7 +172,8 @@ body {
     border-radius: 4px;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1,5;
+    font-family: inherit;
+    line-height: 1.5;
     display: flex;
     align-items: center;
     text-align: center;
